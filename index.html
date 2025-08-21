@@ -14,6 +14,15 @@
       background-size: cover;
     }
 
+    /* ✅ Global fix for all images */
+    img {
+      max-width: 100%;
+      height: auto;
+      image-rendering: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
     .overlay {
       background: rgba(255, 223, 0, 0.85); /* sampled yellow, semi-opaque */
       margin: 20px auto;
@@ -24,7 +33,6 @@
 
     header img {
       max-width: 400px;
-      width: 80%;
       margin-top: 20px;
     }
 
@@ -42,9 +50,9 @@
     .alien-img {
       margin: 30px auto;
       max-width: 700px;
-      width: 90%;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      object-fit: contain;
     }
 
     footer {
@@ -75,7 +83,7 @@
     .beets-img {
       margin-top: 20px;
       max-width: 600px;
-      width: 90%;
+      object-fit: contain;
     }
   </style>
 </head>
