@@ -7,8 +7,8 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', sans-serif; /* Updated font */
-      color: #000; /* Updated text color */
+      font-family: 'Comic Sans MS', sans-serif;
+      color: #000;
       text-align: center;
       background: url('https://i.ibb.co/G1T61WJ/dreamstime-xxl-186415043.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -40,11 +40,20 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
 
+    /* --- Crisp full-size alien image --- */
     .alien-img {
       display: block;
-      margin: 0 auto;
-      max-width: 100%;
-      height: auto;
+      margin: 40px auto;
+      width: auto;   /* show native file width */
+      height: auto;  /* keep aspect ratio */
+    }
+
+    /* Optional: scale down only if the screen is narrower than the image */
+    @media (max-width: 1200px) {
+      .alien-img {
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     footer {
@@ -79,10 +88,8 @@
     }
 
     audio {
-      margin: 20px 0;
+      margin: 20px auto;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
   </style>
 </head>
@@ -115,7 +122,9 @@
   </div>
 
   <!-- Main Image -->
-  <img src="https://i.ibb.co/V0cq8CBH/Running-from-Aliens.png" alt="Running from Aliens" class="alien-img">
+  <img src="https://i.ibb.co/KcGbTyg2/Running-from-Aliens-2.png" 
+       alt="Running from Aliens" 
+       class="alien-img">
 
   <!-- Audio Player -->
   <audio controls>
