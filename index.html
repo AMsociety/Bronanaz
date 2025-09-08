@@ -7,8 +7,8 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      color: #fff;
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* Updated font */
+      color: #000; /* Updated text color */
       text-align: center;
       background: url('https://i.ibb.co/G1T61WJ/dreamstime-xxl-186415043.jpg') no-repeat center center fixed;
       background-size: cover;
@@ -24,7 +24,7 @@
 
     header img {
       display: block;
-      margin: 20px auto;
+      margin: 0 auto;
       max-width: 100%;
       height: auto;
     }
@@ -42,11 +42,9 @@
 
     .alien-img {
       display: block;
-      margin: 30px auto;
+      margin: 0 auto;
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
 
     footer {
@@ -79,13 +77,20 @@
       max-width: 100%;
       height: auto;
     }
+
+    audio {
+      margin: 20px 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   </style>
 </head>
 <body>
 
   <!-- Header Logo -->
   <header>
-    <img src="https://i.ibb.co/8DNBdm3J/IMG-0472.jpg" alt="Bronanaz Logo">
+    <img src="https://i.ibb.co/MDZ3f45y/IMG-0660.png" alt="Bronanaz Logo">
   </header>
 
   <!-- YouTube Video -->
@@ -109,8 +114,14 @@
     </p>
   </div>
 
-  <!-- Alien Image -->
-  <img src="https://i.ibb.co/V0cq8CBH/Running-from-Aliens.png" alt="Running from Aliens" class="alien-img">
+  <!-- Main Image -->
+  <img src="https://i.ibb.co/MDZ3f45y/IMG-0660.png" alt="Running from Aliens" class="alien-img">
+
+  <!-- Audio Player -->
+  <audio controls>
+    <source src="Bronanaztheme.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
 
   <!-- Footer -->
   <footer>
